@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 public class Example {
     @RequestMapping("/")
     String home() {
-        return "祖明爽小宝宝，哈哈哈哈";
+        return "bimart欢迎你！";
     }
     public static void main(String[] args) throws Exception {
         SpringApplication.run(Example.class, args);
