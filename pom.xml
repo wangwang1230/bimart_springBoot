@@ -10,7 +10,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>1.4.0.RELEASE</version>
 	</parent>
-	<repositories>
+	<!-- <repositories>
 		<repository>
 			<id>nexus-snapshots</id>
 			<name>yhtSnapshots</name>
@@ -22,7 +22,34 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-	</repositories>
+		<repository>  
+            <id>maven-ali</id>  
+            <url>http://maven.aliyun.com/nexus/content/groups/public/</url>  
+            <releases>  
+                <enabled>true</enabled>  
+            </releases>  
+            <snapshots>  
+                <enabled>true</enabled>  
+                <updatePolicy>always</updatePolicy>  
+                <checksumPolicy>fail</checksumPolicy>  
+            </snapshots>  
+        </repository>  
+		  
+        <repository>
+             <id>jboss</id>
+             <name>JBoss Repository</name>
+             <url>http://repository.jboss.com/maven2/</url>
+             <releases>
+                 <enabled>true</enabled>
+                 <updatePolicy>daily</updatePolicy>
+             </releases>
+             <snapshots>
+                 <enabled>false</enabled>
+                 <checksumPolicy>warn</checksumPolicy>
+             </snapshots>
+             <layout>default</layout>
+         </repository>
+	</repositories> -->
 	<build>
 		<plugins>
 			<plugin>
