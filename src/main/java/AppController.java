@@ -21,15 +21,15 @@ public class AppController {
 	@RequestMapping("/")
 	String home() {
 		return "bimart欢迎你！";
-	}
-		
-	@PostMapping("/openApp")
+	}		
+	/*@PostMapping("/openApp")
 	public String openApp(HttpServletRequest req) {
 		Map<String, String[]> param = req.getParameterMap();
 		Map<String, String> ps = new HashMap<String, String>();
 		for (Map.Entry<String, String[]> entry : param.entrySet()) {
 			ps.put(entry.getKey(), entry.getValue()[0]);
 		}
+		logger.info("----------start-------------");
 		boolean b = AppCenter.checkSign(req);
 		String activeCode = ps.get("activationCode");
 		String tenantId = ps.get("tenantId");
@@ -43,7 +43,7 @@ public class AppController {
 		logger.info("params is ", ps);
 		logger.error(" check result " + b);
 		return "success";
-	}
+	}*/
 
 	public static void main(String[] args) throws Exception {
 		SpringApplication.run(AppController.class, args);
